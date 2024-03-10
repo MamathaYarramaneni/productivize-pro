@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+    width: 400px;
+    height: 300px;
+    background: linear-gradient(110deg, #2a6cfa 60%, #6b9fed 60%);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    --bg: "https://aspen-48.github.io/pomo-assets/bgs/bg.jpg";
+    --sans: "Poppins", sans-serif;
+    --mono: "Space Mono", monospace;
+    color: white;
+    overflow: clip;
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    /* background-image: var(--bg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+body:after {
+    content: "beta";
+    position: fixed;
+    width: 80px;
+    height: 25px;
+    background: #EE8E4A;
+    top: 7px;
+    left: -20px;
+    text-align: center;
+    font-size: 13px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #fff;
+    line-height: 27px;
+    transform: rotate(-45deg);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover span.fa {
+    text-decoration: none;
+}
+
+
+button {
+    margin: 0 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.timer-container {
+    font-size: 1.2rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(3px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+    text-align: center;
+    transition: 0.3s ease-in-out;
+}
+
+.content:hover {
+    box-shadow: 0px 0px 9px 5px rgba(0, 0, 0, 0.05);
+}
+
+#pomo {
+    width: 100%;
+    height: 100%;
+}
+
+#timer {
+    text-align: center;
+    font-size: 5rem;
+    font-family: var(--mono);
+    text-shadow: 0 0 5px #00000030;
+    margin: 15px;
+}
+
+.ctrl-btn {
+    font-size: 1rem;
+    font-family: var(--sans);
+    font-weight: 500;
+    border: 3px solid white;
+    border-radius: 50px;
+    color: white;
+    background-color: transparent;
+    padding: 7px 15px 7px 15px;
+    margin: 0 10px 0 10px;
+    transition: 0.1s ease-in-out;
+    box-shadow: 0 0 5px #00000030;
+}
+
+.ctrl-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px #00000030;
+}
+
+.ctrl-btn:active {
+    color: white;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+}
+
+.ctrl-btn:disabled {
+    opacity: 70%;
+    box-shadow: none;
+    border: none;
+    color: white;
+    background-color: transparent;
+}
